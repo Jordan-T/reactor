@@ -154,7 +154,7 @@ function reactor_do_post_footer_comments_link() {
 	
 	if ( comments_open() && $comments_link ) { ?>
 		<div class="comments-link">
-			<i class="icon social foundicon-chat" title="Comments"></i>
+			<i class="icon fi-comment" title="Comments"></i>
 			<?php comments_popup_link('<span class="leave-comment">' . __('Leave a Comment', 'reactor') . '</span>', __('1 Comment', 'reactor'), __('% Comments', 'reactor') ); ?>
 		</div><!-- .comments-link -->
     <?php }

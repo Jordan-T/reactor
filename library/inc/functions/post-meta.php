@@ -81,10 +81,10 @@ if ( !function_exists('reactor_post_meta') ) {
 		 */
 		if ( $date || $categories_list || $author || $tag_list ) {
 			if ( $args['show_icons'] ) {
-				$meta .= ( $author && $args['show_author'] ) ? '<i class="social foundicon-torso" title="Written by"></i> <span class="by-author">%4$s</span>' : '';
-				$meta .= ( $date && $args['show_date'] ) ? '<i class="general foundicon-calendar" title="Publish on"></i> %3$s' : '';
-				$meta .= ( $categories_list && $args['show_cat'] ) ? '<i class="general foundicon-folder" title="Posted in"></i> %1$s' : '';
-				$meta .= ( $tag_list && $args['show_tag'] ) ? '<div class="entry-tags"><i class="general foundicon-flag" title="Tagged with"></i> %2$s</div>' : '';
+				$meta .= ( $author && $args['show_author'] ) ? '<i class="fi-torso" title="' . __('Written by', 'reactor') . '"></i> <span class="by-author">%4$s</span>' : '';
+				$meta .= ( $date && $args['show_date'] ) ? '<i class="fi-calendar" title="' . __('Publish on', 'reactor') . '"></i> %3$s' : '';
+				$meta .= ( $categories_list && $args['show_cat'] ) ? '<i class="fi-folder" title="' . __('Posted in', 'reactor') . '"></i> %1$s' : '';
+				$meta .= ( $tag_list && $args['show_tag'] ) ? '<div class="entry-tags"><i class="fi-flag" title="' . __('Tagged with', 'reactor') . '"></i> %2$s</div>' : '';
 				
 				if ( $meta ) {
 					$output = '<div class="entry-meta icons">' . $meta . '</div>';

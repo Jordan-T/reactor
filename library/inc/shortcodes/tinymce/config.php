@@ -241,25 +241,14 @@ $reactor_shortcodes['flex_video'] = array(
 $reactor_shortcodes['glyph_icon'] = array(
 	'no_preview' => true,
 	'params'     => array(
-		'type'   => array(
-			'type'  => 'select',
-			'label' => __('Icon Cateogry', 'reactor'),
-			'desc'  => __('Select the category for the icon', 'reactor'),
-			'options' => array(
-				'general'    => __('General', 'reactor'),
-				'enclosed'   => __('Enclosed', 'reactor'),
-				'social'     => __('Social', 'reactor'),
-				'accessible' => __('Accessible', 'reactor'),
-			)
-		),
 		'icon' => array(
-			'std'  => '',
+			'std'   => '',
 			'type'  => 'text',
 			'label' => __('Icon', 'reactor'),
-			'desc'  => __('Enter the name of the icon from http://zurb.com/playground/foundation-icons', 'reactor')
+			'desc'  => __('Enter the name of the icon from http://zurb.com/playground/foundation-icon-fonts-3', 'reactor')
 		),
 		'style' => array(
-			'std'  => '',
+			'std'   => '',
 			'type'  => 'text',
 			'label' => __('Styles', 'reactor'),
 			'desc'  => __('Enter any styles for the icon as inline CSS ( ie. color: #000; )', 'reactor')
@@ -271,7 +260,7 @@ $reactor_shortcodes['glyph_icon'] = array(
 			'desc'  => __('Enter any text to be displayed with the icon', 'reactor'),
 		)
 	),
-	'shortcode' => '[glyph_icon type="{{type}}" icon="{{icon}}" style="{{style}}"] {{content}} [/glyph_icon]',
+	'shortcode'   => '[glyph_icon icon="{{icon}}" style="{{style}}"] {{content}} [/glyph_icon]',
 	'popup_title' => __('Insert Glyph Icon Shortcode', 'reactor')
 );
 
